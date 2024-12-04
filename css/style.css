@@ -101,6 +101,7 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+
 .footer {
     justify-content: center;
 }
@@ -118,6 +119,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 5em 10em;
+    flex-grow: 1;
 }
 
 .hero-container,
@@ -126,17 +128,21 @@ body {
 .b-3-container {
     display: flex;
 }
+
 .hero-container {
     gap: 2em;
 }
+
 .hero-container img {
     flex-shrink: 0;
 }
+
 .b-1-container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .img-card-pane {
     display: flex;
     gap: 6em;
@@ -145,22 +151,27 @@ body {
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .img-card {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2em;
 }
+
 .img-description {
     text-align: center;
 }
+
 .b-2-container {
     padding: 5em 10em;
     flex-direction: column;
 }
+
 .quote-ref {
     align-self: flex-end;
 }
+
 .action-card {
     display: flex;
     height: 7em;

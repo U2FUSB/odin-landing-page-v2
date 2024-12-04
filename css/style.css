@@ -1,0 +1,170 @@
+/* General styling and style reversal */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Courier, monospace;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+    overflow-x: hidden;
+    -ms-overflow-style: none;
+    /* Hide scrollbar for IE and Edge */
+    scrollbar-width: none;
+    /* Hide scrollbar for Firefox */
+}
+
+img {
+    max-width: 30em;
+    max-height: 30em;
+}
+
+/* Text style formatting */
+.header,
+.footer,
+.hero {
+    background-color: #1F2937;
+}
+
+.intro h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.intro p,
+.header .link,
+.footer {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header .logo {
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.action-card,
+.action-card button,
+.hero button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 6px;
+}
+
+.action-card button,
+.hero button {
+    padding: .5em 2em;
+    font-weight: bold;
+}
+
+.hero button {
+    border: 0;
+    margin-top: 2em;
+}
+
+.action-card button {
+    border-color: #F9FAF8;
+}
+
+.b-1 h2 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+
+.b-2 {
+    background-color: #E5E7EB;
+}
+
+.quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.img-card img {
+    border: 0.25em solid #3882F6;
+    border-radius: 6px;
+}
+
+/* Flex */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header,
+.footer {
+    display: flex;
+    padding: 1em 5em;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer {
+    justify-content: center;
+}
+
+.links {
+    display: flex;
+    gap: 5em;
+}
+
+.hero,
+.b-1,
+.b-2,
+.b-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 10em;
+}
+
+.hero-container,
+.b-1-container,
+.b-2-container,
+.b-3-container {
+    display: flex;
+}
+.hero-container {
+    gap: 2em;
+}
+.hero-container img {
+    flex-shrink: 0;
+}
+.b-1-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.img-card-pane {
+    display: flex;
+    gap: 6em;
+    align-items: flex-end;
+    padding-top: 2em;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+.img-description {
+    text-align: center;
+}
+.b-2-container {
+    padding: 5em 10em;
+    flex-direction: column;
+}
+.quote-ref {
+    align-self: flex-end;
+}
+.action-card {
+    display: flex;
+    height: 7em;
+    width: 80em;
+    align-items: center;
+    justify-content: space-around;
+}
